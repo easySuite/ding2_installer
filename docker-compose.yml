@@ -171,9 +171,9 @@ services:
 #      NODE_SERVICE_KEY: node-service-key
 #    volumes:
 #      - ./web/profiles/ding2/themes/ddbasic:/var/www/html/web/profiles/ding2/themes/ddbasic
-#  memcached:
-#    container_name: "${PROJECT_NAME}_memcached"
-#    image: wodby/memcached:$MEMCACHED_TAG
+  memcached:
+    container_name: "${PROJECT_NAME}_memcached"
+    image: wodby/memcached:$MEMCACHED_TAG
 
 #  rsyslog:
 #    container_name: "${PROJECT_NAME}_rsyslog"
