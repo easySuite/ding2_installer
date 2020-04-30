@@ -45,7 +45,7 @@ services:
 #      SIMPLETEST_DB: "${DB_DRIVER}://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}#tests_"
 #      MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", {"browserName":"chrome","goog:chromeOptions":{"args":["--disable-gpu","--headless"]}}, "http://chrome:9515"]'
     volumes:
-      - ~/.ssh/ng_ubuntu:/home/wodby/.ssh/id_rsa
+      - ~/.ssh/id_rsa:/home/wodby/.ssh/id_rsa
       - ./:/var/www/html
 ## For macOS users (https://wodby.com/docs/stacks/drupal/local#docker-for-mac)
 #      - ./:/var/www/html:cached # User-guided caching
